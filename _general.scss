@@ -1,0 +1,203 @@
+/* General */
+
+@font-face {
+  font-family: "Delicious";
+  src: url("Delicious-Bold.otf");
+}
+
+@font-face {
+  font-family: "DeliciousR";
+  src: url("Delicious-Roman.otf");
+}
+
+@font-face {
+  font-family: "Anders";
+  src: url("Anders.ttf");
+}
+
+html, body { 
+  height: 100%; 
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+a {
+  display: block;
+}
+
+/*Navbar*/
+.navbar-fixed-top {
+  display: none;
+}
+
+.top-nav.col-xs-2 {
+  width: 20%;
+  padding: 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+.top-nav.col-xs-2, .top-nav.col-xs-2 > a {
+  height: 0px;
+}
+
+.top-nav > a > .fa {
+  font-size: 2.3em;
+  line-height: 72px;
+}
+
+.top-nav > a > i {
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+
+.top-nav > p {
+  width: 150%;
+}
+
+.top-nav.col-xs-2:hover, .top-nav.col-xs-2:active, .top-nav.col-xs-2:hover > p, .top-nav.col-xs-2:focus, .top-nav.col-xs-2:focus > p {
+  overflow: visible;
+  background-color: blue;
+}
+
+.top-nav.col-xs-2.active, .top-nav.col-xs-2.active > a, .top-nav.col-xs-2.active > a:focus, .top-nav.col-xs-2.active > p, .top-nav.col-xs-2.active:hover > p {
+  background-color: #424242;
+  overflow: hidden;
+}
+
+.navbar-fixed-top.container-fluid {
+  background-color: #00CCD6;
+  padding-bottom: 0px;
+  height: 0;
+  animation: all 0.2s ease; 
+  -webkit-animation: all 0.2s ease;
+}
+
+.fixed-navbar.fixed-sidenav {
+  position: absolute;
+  width: 110px;
+  background-color: #424242;
+  top: 100%;
+  right: 4%;
+  font-size: 20px;
+  font-family: DeliciousR;
+  z-index: 5;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 2%;
+  -webkit-transition: 0.5s top ease;
+}
+
+.nav > li, .nav > li > a, .nav > li.active > a {
+  width: 100%;
+  height: 80px;
+  margin: 0;
+  border: 0;
+}
+
+.nav > li > a.sidenav {
+  color: black;
+  padding: 10px 10px 0 10px;
+}
+
+li.active > a.sidenav:hover, a.sidenav:hover, .nav > li > a:hover, .nav > li > a:focus, .nav > li.active > a:visited {
+  background-color: #424242;
+  border: 0 solid #FFD900;
+  color: black;
+  margin: 0;
+}
+
+li.active > a.sidenav:visited, .nav > li.active > a, .nav > li.active > a:hover, .nav > li.active > a:focus {
+  background-color: #FFD900;
+}
+
+.nav > li > a:hover {
+  color: white;
+}
+
+/*Bottom Margin*/
+.skills, .experiences, #pbg, .profile {
+	margin-bottom: 30px;
+}
+
+/*Text*/
+.underline {
+  height: 0;
+  border: 1px #FFD900 solid;
+  display: block;
+  width: 80%;
+  margin: 50px auto;
+}
+
+.text-centered {
+  text-align: center; 
+  margin-top: 18px;
+  font-family: Delicious;
+  font-size: 50px; 
+  color: #00CCD6;
+}
+
+/* Media Query */
+
+/*Device on Portrait*/
+@media only screen and (orientation : portrait) {
+  .fixed-navbar.fixed-sidenav {
+    display: none;
+  }
+
+  .navbar-fixed-top{
+    display: block;
+  }
+ 
+  .container-fluid, .pbg {
+    padding-top: 72px;
+  }
+  
+.container-fluid.landing-background {
+	padding-top: 0 ;
+}
+
+  .full-window {
+    height: auto;
+  }
+}
+
+/*Smartphones on Portrait*/
+
+/*Smartphones*/
+@media only screen and (min-width : 480px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  .text-centered {
+    font-size: 70px; 
+  }
+
+  .subheaders {
+    font-size: 40px;
+  }
+
+  .company {
+    font-size: 25px;
+  }
+
+  .container-fluid {
+    font-size: 20px;
+  }
+
+  .landing-layer {
+    font-size: 22px;
+  }
+  
+  .enter-btn {
+	font-size: 24px;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
